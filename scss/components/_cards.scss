@@ -1,0 +1,81 @@
+.noticia {
+    margin-bottom: 40px;
+    
+    &__titulo {
+        font-size: 1.4rem;
+        color: $negro-claro;
+        text-decoration: none;
+        font-weight: 700;
+        &:hover { color: $gris-suave; }
+    }
+    
+    &__meta {
+        font-size: 0.8rem;
+        color: $gris-suave;
+        margin-top: 5px;
+    }
+}
+
+
+// Color verde de tu referencia
+$verde-tribu: #22c55e;
+
+// Yo diseño el botón verde tipo píldora
+.btn-tribu-ingresar {
+    background-color: $verde-tribu;
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: background-color 0.2s, transform 0.2s;
+    
+    &:hover {
+        background-color: darken($verde-tribu, 5%);
+        transform: scale(1.03);
+    }
+}
+
+/* 
+Yo diseño el botón de Google para que sea profesional:
+1. El botón: Lo dejo blanco, con un borde gris muy flaquito y sin sombras pesadas.
+2. El logo: Le obligo a medir 18px. Es como ponerle un marco pequeño a una foto grande.
+3. El texto: Lo dejo al lado del logo, bien centrado y con una letra limpia.
+*/
+
+.google-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0; // Gris muy suave
+    border-radius: 4px;
+    padding: 10px 16px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    outline: none;
+    margin-top: 15px;
+
+    // Yo controlo que el logo no se vea gigante
+    &__logo {
+        width: 18px !important;
+        height: 18px !important;
+        display: block;
+        object-fit: contain;
+    }
+
+    &__text {
+        color: #3c4043;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: 'Noto Sans', sans-serif;
+    }
+
+    &:hover {
+        background-color: #f8f9fa;
+        border-color: #d2d2d2;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    }
+}

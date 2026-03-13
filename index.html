@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es-Cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+    <header class="header-principal py-4">
+        <nav class="container d-flex justify-content-center align-items-center gap-4">
+            <a href="index.html" class="nav-link-custom">Inicio</a>
+            <a href="proyectos.html" class="nav-link-custom">Proyectos</a>
+            <a href="Blog.html" class="nav-link-custom">Blog</a>
+            <a href="curriculo.html" class="nav-link-custom">Currículo</a>
+            <button id="nav-entrar" class="btn-tribu-ingresar">Ingresar</button>
+            <button id="btn-cerrar-sesion" class="btn btn-link text-danger d-none text-decoration-none">Salir</button>
+            <span id="user-name" class="text-secondary small d-none"></span>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- SECCIÓN SOBRE MÍ (Restaurada) -->
+        <section id="seccion-sobre-mi" class="py-5">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-4 text-center">
+                    <img src="IMG/profile.png" alt="Andrés Díaz" class="img-fluid rounded-circle p-2 mb-4" style="max-width: 280px;">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-secondary h6 mb-1 fw-light">Desarrollador Front-End</h2>
+                    <h1 class="fw-bold mb-3">Andrés Díaz</h1>
+                    <p class="text-secondary mb-4">Soy diseñador con experiencia en diseño digital, motion graphics y marketing digital. He colaborado con marcas como Philips, Codelco, Toyota y Movistar, desarrollando propuestas creativas y estrategias efectivas.</p>
+                    <div class="d-flex gap-2">
+                        <a href="https://drive.google.com/file/d/1cyewDGi05zVUVZyrei00mEDO2L1UKsB0/view?usp=sharing" class="btn btn-primary px-4 py-2" target="_blank">Descargar CV</a>
+                        <a href="https://github.com/enepixeles" class="btn btn-primary px-4 py-2">GitHub</a>
+                        <a href="https://be.net/enepixeles" class="btn btn-primary px-4 py-2">Behance</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr class="my-5 border-light">
+
+        <!-- SECCIÓN LOGIN (Escondida) -->
+        <section id="seccion-login" class="py-5 d-none">
+            <div class="col-md-4 mx-auto text-center">
+                <h3 class="fw-bold mb-4">Administración</h3>
+                <button id="btn-google" class="btn btn-outline-danger w-100">Entrar con Google</button>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5 text-center text-secondary small">
+        <p>Andrés Díaz © 2026 - M08L02-DESARROLLO DE PORTAFOLIO DE UN PRODUCTO DIGITAL</p>
+    </footer>
+<!-- Modal de Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 p-4">
+      <div class="modal-body text-center">
+        <h2 class="fw-bold mb-2">¡Qué bueno verte!</h2>
+        <p class="text-secondary mb-4">Por favor, ingresa tus datos para continuar.</p>
+        
+        <!-- Formulario -->
+        <div class="text-start">
+            <label class="form-label small fw-bold">Correo electrónico</label>
+            <input type="email" id="login-email" class="form-control mb-3 py-2" placeholder="tu@correo.com">
+            
+            <label class="form-label small fw-bold">Contraseña</label>
+            <input type="password" id="login-pass" class="form-control mb-1 py-2" placeholder="Tu contraseña">
+            
+            <div class="text-end mb-4">
+                <a href="#" class="small text-decoration-none text-dark fw-bold">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+
+        <button id="btn-ingresar-modal" class="btn btn-dark w-100 py-2 mb-3 fw-bold">Iniciar sesión</button>
+        
+
+<button id="btn-google" class="google-btn">
+    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="google-btn__logo" alt="Google Logo">
+    <span class="google-btn__text">Ingresar con Google</span>
+</button>
+
+        <p class="small text-secondary">¿No tienes una cuenta? <a href="#" class="text-dark fw-bold text-decoration-none">Regístrate gratis</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

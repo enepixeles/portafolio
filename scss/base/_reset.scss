@@ -1,0 +1,17 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Noto Sans', sans-serif;
+    color: #333333;
+    margin: 0;
+}
+
+// Estilo para los botones azules de tu diseño
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px !important; // Aquí sí usamos un poquito de radio para que calce con tu foto
+    font-weight: 500;
+    &:hover {
+        background-color: #0056b3;
+    }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "m08l02-ep01",
+  "version": "1.0.0",
+  "description": "Portafolio de producto digital - Blog de Noticias",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/main.scss:css/main.css"
+  },
+  "dependencies": {
+    "sass": "^1.70.0"
+  }
+}

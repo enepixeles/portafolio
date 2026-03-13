@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es-Cl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Proyectos - Andrés Díaz</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/main.css">
+</head>
+<body>
+
+    <header class="header-principal py-4">
+        <nav class="container d-flex justify-content-center align-items-center gap-4">
+            <a href="index.html" class="nav-link-custom">Inicio</a>
+            <a href="proyectos.html" class="nav-link-custom">Proyectos</a>
+            <a href="Blog.html" class="nav-link-custom">Blog</a>
+            <a href="curriculo.html" class="nav-link-custom">Currículo</a>
+            <button id="nav-entrar" class="btn-tribu-ingresar">Ingresar</button>
+            <button id="btn-cerrar-sesion" class="btn btn-link text-danger d-none text-decoration-none">Salir</button>
+            <span id="user-name" class="text-secondary small d-none"></span>
+        </nav>
+    </header>
+
+    <main class="container py-5">
+        <!-- Filtros de la Galería -->
+        <ul class="nav justify-content-start mb-5 filter-menu border-bottom pb-3">
+            <li class="nav-item"><a class="nav-link active text-dark fw-bold px-0 me-4" href="#" data-filter="all">All</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary px-0 me-4" href="#" data-filter="web">Web design</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary px-0 me-4" href="#" data-filter="branding">Branding</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary px-0 me-4" href="#" data-filter="development">Development</a></li>
+            <li class="nav-item"><a class="nav-link text-secondary px-0 me-4" href="#" data-filter="support">Support</a></li>
+        </ul>
+
+        <!-- Grilla de Proyectos -->
+        <div class="row g-5" id="galeria-proyectos">
+            
+            <!-- Proyecto 1: Alto Tenis -->
+            <div class="col-md-6 gallery-item" data-category="web">
+                <div class="project-card">
+                    <img src="img/01.jpg" alt="Alto Tenis Landing" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Alto Tenis - Landing Page</h3>
+                    <p class="text-secondary small">Sitio web informativo para escuela de tenis con enfoque en captación de alumnos y diseño limpio.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">WEBDESIGN</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">BOOTSTRAP</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2: Ingen Store -->
+            <div class="col-md-6 gallery-item" data-category="development">
+                <div class="project-card">
+                    <img src="img/02.jpg" alt="Ingen Store E-commerce" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Ingen Store - E-commerce</h3>
+                    <p class="text-secondary small">Tienda virtual con catálogo de productos de Jurassic Park, implementando carrito de compras.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">DEVELOPMENT</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">JQUERY</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 3: La Tribu -->
+            <div class="col-md-6 gallery-item" data-category="branding">
+                <div class="project-card">
+                    <img src="img/03.jpg" alt="La Tribu Landing" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">La Tribu - Comunidad</h3>
+                    <p class="text-secondary small">Plataforma de apoyo para padres con hijos neurodivergentes, enfocada en la empatía y red de apoyo.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">BRANDING</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 4: Banco Impulso -->
+            <div class="col-md-6 gallery-item" data-category="development">
+                <div class="project-card">
+                    <img src="img/04.jpg" alt="Banco Impulso Dashboard" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Banco Impulso - Dashboard</h3>
+                    <p class="text-secondary small">Aplicación financiera para control de gastos e ingresos con integración de APIs de indicadores económicos.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">DEVELOPMENT</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">SASS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 5: Alto Tenis Inscripción -->
+            <div class="col-md-6 gallery-item" data-category="support">
+                <div class="project-card">
+                    <img src="img/05.jpg" alt="Formulario de Inscripción" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Sistema de Inscripción Dinámico</h3>
+                    <p class="text-secondary small">Formulario complejo con validaciones avanzadas para el registro de nuevos alumnos en la academia.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">SUPPORT</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">JAVASCRIPT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 6: La Tribu Learning -->
+            <div class="col-md-6 gallery-item" data-category="web">
+                <div class="project-card">
+                    <img src="img/06.jpg" alt="Aula Virtual" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Aula Virtual - LMS</h3>
+                    <p class="text-secondary small">Interfaz de aprendizaje asíncrono con navegación por módulos y reproductor de clases en video.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">WEBDESIGN</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 7: Panel de Logros -->
+            <div class="col-md-6 gallery-item" data-category="branding">
+                <div class="project-card">
+                    <img src="img/07.jpg" alt="Dashboard de Logros" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">Gamificación y Logros</h3>
+                    <p class="text-secondary small">Visualización de progreso mediante medallas y tarjetas dinámicas para incentivar el aprendizaje.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">BRANDING</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">DEVELOPMENT</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 8: App del Clima -->
+            <div class="col-md-6 gallery-item" data-category="development">
+                <div class="project-card">
+                    <img src="img/08.jpg" alt="App del Clima" class="img-fluid mb-3">
+                    <h3 class="h5 fw-bold mb-1">App del Clima Profesional</h3>
+                    <p class="text-secondary small">Aplicación meteorológica que consume datos en tiempo real mediante Fetch API y geolocalización.</p>
+                    <div class="d-flex gap-2 mt-2">
+                        <span class="badge rounded-pill border text-secondary fw-light">DEVELOPMENT</span>
+                        <span class="badge rounded-pill border text-secondary fw-light">API</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-5 text-center text-secondary small">
+        <p>Andrés Díaz © 2026</p>
+    </footer>
+<!-- Modal de Login -->
+<div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 p-4">
+      <div class="modal-body text-center">
+        <h2 class="fw-bold mb-2">¡Qué bueno verte!</h2>
+        <p class="text-secondary mb-4">Por favor, ingresa tus datos para continuar.</p>
+        
+        <!-- Formulario -->
+        <div class="text-start">
+            <label class="form-label small fw-bold">Correo electrónico</label>
+            <input type="email" id="login-email" class="form-control mb-3 py-2" placeholder="tu@correo.com">
+            
+            <label class="form-label small fw-bold">Contraseña</label>
+            <input type="password" id="login-pass" class="form-control mb-1 py-2" placeholder="Tu contraseña">
+            
+            <div class="text-end mb-4">
+                <a href="#" class="small text-decoration-none text-dark fw-bold">¿Olvidaste tu contraseña?</a>
+            </div>
+        </div>
+
+        <button id="btn-ingresar-modal" class="btn btn-dark w-100 py-2 mb-3 fw-bold">Iniciar sesión</button>
+        
+<button id="btn-google" class="google-btn">
+    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" class="google-btn__logo" alt="Google Logo">
+    <span class="google-btn__text">Ingresar con Google</span>
+</button>
+        <p class="small text-secondary">¿No tienes una cuenta? <a href="#" class="text-dark fw-bold text-decoration-none">Regístrate gratis</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

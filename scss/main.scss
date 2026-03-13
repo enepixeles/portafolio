@@ -1,0 +1,9 @@
+// Yo conecto todas las piezas de mi diseño
+@import 'abstracts/variables';
+@import 'base/reset';
+@import 'layout/page';
+
+// Agrega esta línea aquí abajo
+@import 'components/buttons';
+@import 'components/cards';
+// @import 'components/gallery';

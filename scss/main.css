@@ -1,0 +1,189 @@
+@charset "UTF-8";
+body {
+  background-color: #ffffff;
+  font-family: "Noto Sans", sans-serif;
+  color: #333333;
+  margin: 0;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px !important;
+  font-weight: 500;
+}
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* 
+Yo diseño el menú superior:
+1. Sin subrayado: Le quito esa línea azul fea a los links.
+2. Color sobrio: Uso un gris intermedio para que se vea profesional.
+3. Alineación: Me aseguro de que el texto y el botón verde estén nivelados.
+*/
+.header-principal {
+  padding: 30px 0;
+}
+.header-principal nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.header-principal a {
+  text-decoration: none !important;
+  color: #666666;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.header-principal a:hover {
+  color: #000000;
+}
+.header-principal a.fw-bold {
+  color: #000000;
+}
+
+/* 
+Yo defino el estilo del Currículo:
+1. Limpieza: Uso márgenes amplios para que la lectura sea relajada.
+2. Jerarquía: Los títulos son negros y fuertes, mientras que las descripciones son grises para que no cansen la vista.
+3. Tipografía: Uso Noto Sans en distintos grosores para diferenciar fechas de cargos.
+*/
+.cv-header__title {
+  font-size: 2.2rem;
+  color: #1a1a1a;
+}
+.cv-header__summary {
+  line-height: 1.8;
+  font-size: 1.05rem;
+}
+
+.cv-experience__main-title {
+  font-size: 1.8rem;
+  border: none;
+}
+
+.cv-item__job {
+  color: #1a1a1a;
+  letter-spacing: -0.5px;
+}
+.cv-item__date {
+  font-style: italic;
+  font-size: 0.9rem;
+}
+.cv-item__description {
+  line-height: 1.7;
+  font-weight: 300;
+}
+
+/* 
+Yo diseño los elementos de acceso:
+1. Botón Píldora: Uso un verde vibrante y bordes redondeados (pill) como en la captura.
+2. Modal Clean: Elimino bordes pesados y uso sombras sutiles para que se vea moderno.
+3. Inputs: Les doy un padding extra para que sean fáciles de pinchar en el celular.
+*/
+.btn-tribu-ingresar {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: transform 0.2s ease, background-color 0.2s;
+}
+.btn-tribu-ingresar:hover {
+  background-color: rgb(30.2467532468, 175.2532467532, 83.6233766234);
+  transform: scale(1.05);
+}
+
+.modal-content {
+  border-radius: 15px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px !important;
+}
+.form-control:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+}
+
+.noticia {
+  margin-bottom: 40px;
+}
+.noticia__titulo {
+  font-size: 1.4rem;
+  color: #1a1a1a;
+  text-decoration: none;
+  font-weight: 700;
+}
+.noticia__titulo:hover {
+  color: #757575;
+}
+.noticia__meta {
+  font-size: 0.8rem;
+  color: #757575;
+  margin-top: 5px;
+}
+
+.btn-tribu-ingresar {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 8px 32px;
+  border-radius: 50px;
+  font-weight: 600;
+  transition: background-color 0.2s, transform 0.2s;
+}
+.btn-tribu-ingresar:hover {
+  background-color: rgb(30.2467532468, 175.2532467532, 83.6233766234);
+  transform: scale(1.03);
+}
+
+/* 
+Yo arreglo el botón de Google:
+1. Contenedor: Le quito cualquier borde negro feo y uso un gris clarito muy sutil.
+2. El Logo: Le obligo a medir 20px para que no se vea gigante como en la foto.
+3. El Texto: Lo alineo perfectamente al centro junto al logo.
+4. Limpieza: Fondo blanco puro para que combine con el resto de tu sitio.
+*/
+.google-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 100%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 10px 16px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+.google-btn__logo {
+  width: 20px !important;
+  height: 20px !important;
+  display: block;
+}
+.google-btn__text {
+  color: #3c4043;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+}
+.google-btn:hover {
+  background-color: #f8f9fa;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  border-color: #d2d2d2;
+}
+
+.modal-content {
+  border-radius: 12px !important;
+  padding: 20px !important;
+  border: none !important;
+}/*# sourceMappingURL=main.css.map */

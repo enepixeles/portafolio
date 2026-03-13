@@ -1,0 +1,114 @@
+/* 
+Yo diseño el menú superior:
+1. Sin subrayado: Le quito esa línea azul fea a los links.
+2. Color sobrio: Uso un gris intermedio para que se vea profesional.
+3. Alineación: Me aseguro de que el texto y el botón verde estén nivelados.
+*/
+
+.header-principal {
+    padding: 30px 0;
+    
+    nav {
+        display: flex;
+        align-items: center; // Esto centra el texto con el botón verde
+        justify-content: center;
+        gap: 30px;
+    }
+
+    a {
+        text-decoration: none !important; // Chao subrayado
+        color: #666666; // Un gris elegante
+        font-size: 16px;
+        font-weight: 400;
+        transition: color 0.3s ease;
+
+        &:hover {
+            color: #000000; // Se pone negro cuando paso el mouse
+        }
+        
+        &.fw-bold {
+            color: #000000; // La página donde estoy se nota más
+        }
+    }
+}
+
+/* 
+Yo defino el estilo del Currículo:
+1. Limpieza: Uso márgenes amplios para que la lectura sea relajada.
+2. Jerarquía: Los títulos son negros y fuertes, mientras que las descripciones son grises para que no cansen la vista.
+3. Tipografía: Uso Noto Sans en distintos grosores para diferenciar fechas de cargos.
+*/
+
+.cv-header {
+    &__title {
+        font-size: 2.2rem;
+        color: $negro-claro;
+    }
+    &__summary {
+        line-height: 1.8;
+        font-size: 1.05rem;
+    }
+}
+
+.cv-experience {
+    &__main-title {
+        font-size: 1.8rem;
+        border: none; // Me aseguro de que no haya líneas divisorias feas
+    }
+}
+
+.cv-item {
+    &__job {
+        color: $negro-claro;
+        letter-spacing: -0.5px;
+    }
+    &__date {
+        font-style: italic;
+        font-size: 0.9rem;
+    }
+    &__description {
+        line-height: 1.7;
+        font-weight: 300; // Un poco más delgada para el texto largo
+    }
+}
+
+
+
+/* 
+Yo diseño los elementos de acceso:
+1. Botón Píldora: Uso un verde vibrante y bordes redondeados (pill) como en la captura.
+2. Modal Clean: Elimino bordes pesados y uso sombras sutiles para que se vea moderno.
+3. Inputs: Les doy un padding extra para que sean fáciles de pinchar en el celular.
+*/
+
+// Color verde de tu captura
+$verde-ingresar: #22c55e; 
+
+.btn-tribu-ingresar {
+    background-color: $verde-ingresar;
+    color: white;
+    border: none;
+    padding: 8px 30px;
+    border-radius: 50px; // Forma de píldora
+    font-weight: 600;
+    transition: transform 0.2s ease, background-color 0.2s;
+    
+    &:hover {
+        background-color: darken($verde-ingresar, 5%);
+        transform: scale(1.05);
+    }
+}
+
+.modal-content {
+    border-radius: 15px !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.form-control {
+    border: 1px solid #e2e8f0;
+    border-radius: 8px !important;
+    &:focus {
+        border-color: $verde-ingresar;
+        box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.1);
+    }
+}
